@@ -217,7 +217,6 @@ img{
     margin-top: 4rem;
 }
 
-
 /*Contacto*/
 
 .contacto-bg{
@@ -253,3 +252,34 @@ img{
 .campo__field--textarea{
     height: 100px;
 }
+
+/*Sobre Nosotros*/
+
+@media(min-width:768px){
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .sobre-nosotros__texto,
+    .sobre-nosotros__imagen{
+        flex-basis: 50%;
+    }
+}
+
+
+/*
+.sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .sobre-nosotros__imagen{
+
+    }
+
+    .sobre-nosotros__texto{
+        
+    }
+*/
