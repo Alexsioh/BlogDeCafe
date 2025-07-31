@@ -163,12 +163,17 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 
 @media(min-width:768px){
     .boton{
         display: inline-block; /*permite darle el parametro inline y la opcion de agregarle width y margin*/
     }
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton--primario{
@@ -210,4 +215,41 @@ img{
     background-color: var(--negro);
     padding: 3rem 0;
     margin-top: 4rem;
+}
+
+
+/*Contacto*/
+
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem; /* 0: no crece - 0:: no se reduce - 9rem: cambiamos su tamaño base a 9rem*/
+    text-align: right;
+}
+
+.campo__field{
+    flex: 1; /*como el factor de crecimiento de label es 0, entonces el input toma el espacio disponible*/
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea{
+    height: 100px;
 }
